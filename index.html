@@ -17,6 +17,7 @@
         }
 
         :root {
+        
             --primary: #1a1a1a;
             --secondary: #d4af37;
             --accent: #f5f5f5;
@@ -96,6 +97,25 @@
             color: var(--secondary);
         }
 
+        /* dicount bar */
+
+        .discount-bar {
+            background-color: #d4af37;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .discount-bar a {
+            color: white;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+
         /* ============ MAIN CONTAINER ============ */
         main {
             margin-top: 80px;
@@ -125,7 +145,7 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 9rem 2rem;
+            padding: 7rem 2rem;
         }
 
         /* ============ HERO SECTION ============ */
@@ -457,6 +477,11 @@
         }
 
         .btn-edit {
+            flex: 1;
+            background: var(--secondary);
+            color: var(--primary);
+        }
+        .btn-edit1 {
             flex: 1;
             background: var(--secondary);
             color: var(--primary);
@@ -871,98 +896,11 @@
             display: none !important;
         }
 
-        /* ============ RESPONSIVE ============ */
-        @media (max-width: 768px) {
-            nav {
-                padding: 1rem 1.5rem;
-            }
-
-            .logo {
-                font-size: 1.5rem;
-            }
-
-            .nav-menu {
-                gap: 0.5rem;
-            }
-
-            .nav-btn {
-                padding: 0.6rem 1rem;
-                font-size: 0.85rem;
-            }
-
-            .hero {
-                padding: 3rem 1.5rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .products-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 1.5rem;
-            }
-
-            .search-section {
-                flex-direction: column;
-            }
-
-            .search-box {
-                width: 100%;
-                min-width: unset;
-            }
-
-            .modal-content {
-                padding: 1.5rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .nav-menu {
-                width: 100%;
-            }
-
-            .nav-btn {
-                flex: 1;
-            }
-
-            main {
-                margin-top: 120px;
-            }
-
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .admin-products-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .code-digit {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2rem;
-            }
-        }
-
         .contact {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            height: 100vh;
+
         }
 
         .contact-left {
@@ -971,7 +909,7 @@
             justify-content: center;
             align-items: start;
             gap: 20px;
-            width: 45%;
+            width: 50%;
         }
 
         .contact-right {
@@ -982,24 +920,103 @@
             width: 35%;
         }
 
-        /* dicount bar */
-
-        .discount-bar {
-            background-color: #d4af37;
-            text-align: center;
-            padding: 10px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .discount-bar a {
-            color: white;
-            text-decoration: underline;
-            margin-left: 10px;
-        }
+        /* ============ RESPONSIVE ============ */
+        
+@media (max-width: 768px) {
+  :root {
+    --header-h: 74px;
+  }
+  nav {
+    padding: 0.75rem 0.8rem;
+  }
+  .logo {
+    font-size: 1.15rem;
+  }
+  .nav-btn {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  .container {
+    padding: 3.2rem 0.75rem;
+  }
+  .hero {
+    border-radius: 10px;
+    padding: 1.6rem 0.9rem;
+  }
+  .sidebyside {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .items,
+  .howto {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .products-grid,
+  .admin-products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+  }
+  .product-image-wrapper {
+    height: 220px;
+  }
+  .product-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn {
+    width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-left,
+  .contact-right {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+}
+/* ========= SMALL PHONES ========= */
+@media (max-width: 420px) {
+  :root {
+    --header-h: 70px;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-menu {
+    gap: 0.4rem;
+  }
+  .nav-btn {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.55rem;
+  }
+  .hero h1 {
+    font-size: 1.45rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .products-grid,
+  .admin-products-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-image-wrapper {
+    height: 210px;
+  }
+  .code-digit {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.82rem;
+  }
+}
     </style>
 </head>
 
@@ -1010,15 +1027,16 @@
             <div class="logo">
 
 
-                <p style="font-size: 30px;"><a> KP</a> -Fashion Studio</p>
+
+                <a href="" style="text-decoration: none;"> KP - Fashion Studio</a>
 
             </div>
             <div class="nav-menu">
-                <button class="nav-btn active" onclick="switchView('customer')">
-                    <i class="fas fa-shopping-bag"></i> Shop
-                </button>
                 <button class="nav-btn" onclick="switchView('admin')">
                     <!-- <i class="fas fa-cog"></i> -->
+                </button>
+                <button class="nav-btn active" onclick="switchView('customer')">
+                    <i class="fas fa-shopping-bag"></i> Shop
                 </button>
 
             </div>
@@ -1030,7 +1048,7 @@
 
     <!-- Customer View -->
     <section id="customerView" class="section active">
-        <div class="container">
+        <div class=" container" >
             <div class="discount-bar">
                 <marquee width="100%" id="mahima" style="align-items: start;">
                     🔥 Use code <strong>SAVE10</strong> for 10% OFF your first order! first 100 customers only
@@ -1062,8 +1080,11 @@
                 <div class="items">
                     <div class="search-section">
                         <div class="search-box">
-                            <input type="text" id="searchInput" placeholder="Search by name..."
+                            <div class="search-box-icon">
+
+                                <input type="text" id="searchInput" placeholder="Search by name..."
                                 onkeyup="filterProducts()">
+                            </div>
                             <i class="fas fa-search"></i>
                         </div>
                     </div>
@@ -1080,7 +1101,7 @@
                     </select>
                 </div>
                 <div class="howto">
-                    <button class="btn btn-edit" style="width: 100%; height: 50px;"
+                    <button class="btn btn-edit1" style="width: 100%; height: 50px;"
                         onclick="alert('1. Click “Buy Now” on the product you like.\n2. You will be redirected to WhatsApp, where you can contact our team directly.\n3. Share your design (image/text), size, and delivery address with us.\n4. We confirm the order and provide payment details.\n5. Once payment is completed, your order is printed on a premium high-GSM T-shirt.\n6. The product is packed and delivered within 2–3 business days.\n7. After receiving your order, you can share your feedback or review with us on WhatsApp.')">how
                         to order </button>
                 </div>
@@ -1093,32 +1114,13 @@
                 <p>No products found. Try a different search.</p>
             </div>
         </div>
-    </section>
 
-    <!-- Admin View -->
-    <section id="adminView" class="section">
-        <div class="container">
-            <div id="alert" class="alert"></div>
+        <!-- about us   -->
+        <div id="about" class="pages" style="padding: 1.2rem 0.75rem;">
+            
+            
 
-            <div class="admin-header">
-                <h2>Product Management</h2>
-                <button class="btn btn-primary" onclick="openAddProductModal()">
-                    <i class="fas fa-plus"></i> Add Product
-                </button>
-            </div>
-
-            <div id="adminProductsContainer" class="admin-products-grid"></div>
-            <div id="adminEmptyState" class="empty-state hidden">
-                <div class="empty-icon">📦</div>
-                <p>No products added yet. Create your first product!</p>
-            </div>
-        </div>
-    </section>
-    </main>
-    <!-- about us   -->
-    <div id="about" class="page">
-        <!-- <div class="container"> -->
-        <div style="max-width: 800px; margin: 2rem auto;">
+        <div style="max-width: 900px; margin: 2rem auto;">
             <h1>About Us</h1>
             <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
                 Welcome to KP Prints, a custom printing
@@ -1153,11 +1155,15 @@
                 <li>✓ Affordable prices</li>
             </ul>
         </div>
-    </div>
+
+        </div>
     </div>
     <!-- contact     -->
-    <div id="contact">
-        <div class="contact">
+    <div id="contact" class="pages" style="padding: 1.2rem 0.75rem;">
+
+        <div class="contact" style="max-width: 900px; margin: 2rem auto;">
+
+
             <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
                 <div class="contact-left">
                     <h1>Get in touch</h1>
@@ -1165,14 +1171,14 @@
                 <input type="hidden" name="access_key" value="82a10eca-0f4c-4e7a-a021-c539c1c45e23">
                 <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
                 <input type="email" name="email" placeholder="your email" class="contact-inputs" required>
-                <textarea id="message" placeholder="Describe your message..."></textarea>
+                <textarea id="message" name="message" placeholder="Describe your message..."></textarea>
                 <button type="submit" class="btn btn-edit">send</button>
             </form>
 
             <div class="contact-right">
                 <h1>Contact informatio</h1>
                 <div style="margin-top: 3rem; text-align: start; ">
-
+                    
                     <p style="margin-top: 1rem; font-size: 1.1rem; font-size: 18px;">
                         📧 Email: kartikprints@gmail.com<br>
                         📱 Phone: +91 9699 16 262_555 <br>
@@ -1184,11 +1190,36 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+        </div>
+    </div>
+</section>
     <footer>
         <p style="align-items: center; text-align: center;">&copy; 2026 kartik prints. All rights reserved.</p>
     </footer>
+
+    <!-- Admin View -->
+    <section id="adminView" class="section">
+        <div class="container">
+            <div id="alert" class="alert"></div>
+
+            <div class="admin-header">
+                <h2>Product Management</h2>
+                <button class="btn btn-primary" onclick="openAddProductModal()">
+                    <i class="fas fa-plus"></i> Add Product
+                </button>
+            </div>
+
+            <div id="adminProductsContainer" class="admin-products-grid"></div>
+            <div id="adminEmptyState" class="empty-state hidden">
+                <div class="empty-icon">📦</div>
+                <p>No products added yet. Create your first product!</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
 
     <!-- Security Code Modal -->
     <div id="securityModal" class="security-modal">
@@ -1285,7 +1316,7 @@
     <script>
         // Load products from localStorage
         let products = JSON.parse(localStorage.getItem('luxefitProducts')) || [
-            {
+             {
                 id: 1,
                 name: 'Classic Shirt',
                 category: 'Men',
