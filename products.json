@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Shirt",
+        "category": "Men",
+        "price": 499,
+        "image": "https://i.pinimg.com/1200x/8d/91/8a/8d918a3cf8286997758741ad58149720.jpg",
+        "description": "Premium quality and custom print "
+    },
+    {
+        "id": 2,
+        "name": "relaxed fit",
+        "category": "Men",
+        "price": 499,
+        "image": "https://i.pinimg.com/736x/23/3a/55/233a5547313606f6193b2b56ae33e326.jpg",
+        "description": "Stylish and relaxed fit"
+    },
+    {
+        "id": 3,
+        "name": "240gsm design ",
+        "category": "unisex",
+        "price": 499,
+        "image": "https://i.pinimg.com/1200x/2d/d7/b1/2dd7b1d5f2eb6e57ceda5985d8e234a0.jpg",
+        "description": "Light and breathable summer dress collection"
+    },
+    {
+        "id": 4,
+        "name": "Casual polo T-Shirt",
+        "category": "Men",
+        "price": 599,
+        "image": "https://i.pinimg.com/736x/1d/06/63/1d0663ec9e97e4b2d094b73df9940287.jpg",
+        "description": "Comfortable everyday cotton polo t-shirt"
+    },
+    {
+        "id": 5,
+        "name": "Hoodie",
+        "category": "Unise",
+        "price": 799,
+        "image": "https://i.pinimg.com/1200x/7c/34/45/7c344536ff29bac4d4d0cdc977ab85ca.jpg",
+        "description": "Warm and cozy hoodie for kids"
+    },
+    {
+        "id": 6,
+        "name": "porsche 911",
+        "category": "Men",
+        "price": 499,
+        "image": "https://i.pinimg.com/1200x/fa/38/80/fa38807bc40097cd74611b609a662076.jpg",
+        "description": "black, red, white "
+    },
+    {
+        "id": 7,
+        "name": "custom hoodie",
+        "category": "Accessories",
+        "price": 699,
+        "image": "https://i.pinimg.com/736x/26/66/cc/2666cc2d5521c2d34ca47267b2532d07.jpg",
+        "description": "Stay cozy and stylish with this basic premium hoodie"
+    },
+    {
+        "id": 8,
+        "name": "regular t-shirt",
+        "category": "Men",
+        "price": 599,
+        "image": "https://i.pinimg.com/736x/a6/41/bb/a641bbbe84a696ea8bd9b244ce65d68b.jpg",
+        "description": "daily wear t-shirt"
+    },
+    {
+        "id": 9,
+        "name": "cuple t-shirt",
+        "category": "Men",
+        "price": 799,
+        "image": "https://i.pinimg.com/736x/cb/86/42/cb8642a499413c0176b842cd1f21ea43.jpg",
+        "description": "Our t shirts designs don't need pictures to stand out.These text, bold, , modern, grunge, distorted, sleek are to build layouts that draw eyes, trigger emotions and move units"
+    },
+    {
+        "id": 10,
+        "name": "both side print",
+        "category": "Unisex",
+        "price": 549,
+        "image": "https://i.pinimg.com/736x/39/d6/a3/39d6a375bf96a43cc775fdcd44557916.jpg",
+        "description": "casual wear t-shirt "
+    },
+    {
+        "id": 11,
+        "name": "text print hoodie",
+        "category": "Unisex",
+        "price": 599,
+        "image": "https://i.pinimg.com/736x/80/6b/5f/806b5f340bfeca30626e62522d1635cc.jpg",
+        "description": "kp Fashion Men Full Sleeve Graphic Print Hooded Sweatshirt"
+    },
+    {
+        "id": 12,
+        "name": "anime print",
+        "category": "Unisex",
+        "price": 599,
+        "image": "https://i.pinimg.com/1200x/46/8b/d3/468bd3a553da65d462d47c054f0ba574.jpg",
+        "description": " anime print sweatshirt "
+    },
+    {
+        "id": 13,
+        "name": "anime only black print",
+        "category": "Unisex",
+        "price": 599,
+        "image": "https://i.pinimg.com/1200x/c2/19/71/c219711eff2c4215ccf5117a1eaff284.jpg",
+        "description": "No color added "
+    },
+    {
+        "id": 14,
+        "name": "Musician Print",
+        "category": "Men",
+        "price": 499,
+        "image": "https://i.pinimg.com/1200x/41/fa/d0/41fad0f05a2efadff92debac9fd46635.jpg",
+        "description": "Music lover T-shirt artwork"
+    },
+    {
+        "id": 15,
+        "name": "Anyhing print on t-shirt",
+        "category": "Accessories",
+        "price": 499,
+        "image": "https://i.pinimg.com/736x/b3/cd/6e/b3cd6e126eb35b6cb210da9e62de300c.jpg",
+        "description": "Price depend on images and custom size "
+    }
+]
